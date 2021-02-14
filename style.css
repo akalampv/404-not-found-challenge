@@ -1,0 +1,148 @@
+:root {
+
+    /********************************************* FONTS **************************************************************/
+
+    --font-header: 'Inconsolata', monospace; /* font-weight: 700 */
+    --font-main: 'Space Mono', monospace; /* font-weight: 400, 700 */
+    --font-footer: 'Montserrat', sans-serif; /* font-weight: 600 */
+
+    /********************************************* COLORS *************************************************************/
+
+    --color-grey-1: #333;
+    --color-grey-2: #4f4f4f;
+    --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 30%;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 31.25em) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 81.25em) {
+    html {
+        font-size: calc(100% * (10 / 16));
+    }
+}
+
+body {
+    color: var(--color-grey-1);
+    background-color: var(--color-white);
+    height: 100vh;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6.4rem;
+    align-items: center;
+}
+
+.header {
+    font-family: var(--font-header);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: var(--color-grey-1);
+    align-self: flex-start;
+}
+
+.main {
+    font-family: var(--font-main);
+    letter-spacing: -0.035em;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+}
+
+@media only screen and (min-width: 50em) {
+    .main {
+        flex-direction: row;
+    }
+}
+
+.main__img-box {
+
+}
+
+@media only screen and (min-width: 31.25em) {
+    .main__img-box {
+        max-width: 75%;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 37.5em) {
+    .main__img-box {
+        max-width: 50%;
+    }
+}
+
+.main__img {
+    display: block;
+    max-width: 100%;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main__heading {
+    font-size: 6.4rem;
+    line-height: 9.5rem;
+    font-weight: 700;
+    color: var(--color-grey-1);
+}
+
+.main__text {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: var(--color-grey-2);
+}
+
+.main__btn {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-grey-1);
+    padding: 2.4rem 4.3rem;
+    cursor: pointer;
+
+}
+
+.footer {
+    font-family: var(--font-footer);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    color: var(--color-grey-1);
+
+}
